@@ -7,57 +7,58 @@
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
-        <header>
-            <h1>Calculator</h1>
-        </header>
         <main>
-            <table>
-                <div id="display">
-                    <tr>
-                        <td colspan="1"></td>
-                        <td colspan="3">
-                            <input type="text" id="previous-number-display" class="display">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="1">
-                            <input type="text" id="operator-display" class="display">
-                        </td>
-                        <td colspan="3">
-                            <input type="text" id="number-display" class="display">
-                        </td>
-                    </tr>
-                </div>
-                <tr>
-                    <td><button class="btn function" onclick="clear_all();" id="clear">C</button></td>
-                    <td><button class="btn function" onclick="clear_backspace();" id="back">⌫</button></td>
-                    <td><button class="btn operator" onclick="toDisplay(this);" id="percent">%</button></td>
-                    <td><button class="btn operator" onclick="toDisplay(this);" id="divide">÷</button></td>
-                </tr>
-                <tr>
-                    <td><button class="btn number" onclick="toDisplay(this);" id="seven">7</button></td>
-                    <td><button class="btn number" onclick="toDisplay(this);" id="eight">8</button></td>
-                    <td><button class="btn number" onclick="toDisplay(this);" id="nine">9</button></td>`
-                    <td><button class="btn operator" onclick="toDisplay(this);" id="multiply">x</button></td>
-                </tr>
-                <tr>
-                    <td><button class="btn number" onclick="toDisplay(this);" id="four">4</button></td>
-                    <td><button class="btn number" onclick="toDisplay(this);" id="five">5</button></td>
-                    <td><button class="btn number" onclick="toDisplay(this);" id="six">6</button></td>
-                    <td><button class="btn operator" onclick="toDisplay(this);" id="minus">-</button></td>
-                </tr>
-                <tr>
-                    <td><button class="btn number" onclick="toDisplay(this);" id="one">1</button></td>
-                    <td><button class="btn number" onclick="toDisplay(this);" id="two">2</button></td>
-                    <td><button class="btn number" onclick="toDisplay(this);" id="three">3</button></td>
-                    <td><button class="btn operator" onclick="toDisplay(this);" id="plus">+</button></td>
-                </tr>
-                <tr>
-                    <td><button class="btn number" onclick="toDisplay(this);" id="decimal">.</button></td>
-                    <td><button class="btn number" onclick="toDisplay(this);" id="zero">0</button></td>
-                    <td colspan="2"><button class="btn function" onclick="calculate();" id="equals">=</button></td>
-                </tr>
-            </table>
+            <div class="box">
+                <table>
+                    <div id="display">
+                        <tr>
+                            <td colspan="1"></td>
+                            <td colspan="3">
+                                <input type="text" id="previous-number-display" class="display">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="1">
+                                <input type="text" id="operator-display" class="display">
+                            </td>
+                            <td colspan="3">
+                                <input type="text" id="number-display" class="display">
+                            </td>
+                        </tr>
+                    </div>
+                    <div class="content">
+                        <tr>
+                            <td><button class="btn function" onclick="clear_all();" id="clear">C</button></td>
+                            <td><button class="btn function" onclick="clear_backspace();" id="back">⌫</button></td>
+                            <td><button class="btn operator" onclick="toDisplay(this);" id="percent">%</button></td>
+                            <td><button class="btn operator" onclick="toDisplay(this);" id="divide">÷</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="btn number" onclick="toDisplay(this);" id="seven">7</button></td>
+                            <td><button class="btn number" onclick="toDisplay(this);" id="eight">8</button></td>
+                            <td><button class="btn number" onclick="toDisplay(this);" id="nine">9</button></td>`
+                            <td><button class="btn operator" onclick="toDisplay(this);" id="multiply">x</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="btn number" onclick="toDisplay(this);" id="four">4</button></td>
+                            <td><button class="btn number" onclick="toDisplay(this);" id="five">5</button></td>
+                            <td><button class="btn number" onclick="toDisplay(this);" id="six">6</button></td>
+                            <td><button class="btn operator" onclick="toDisplay(this);" id="minus">-</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="btn number" onclick="toDisplay(this);" id="one">1</button></td>
+                            <td><button class="btn number" onclick="toDisplay(this);" id="two">2</button></td>
+                            <td><button class="btn number" onclick="toDisplay(this);" id="three">3</button></td>
+                            <td><button class="btn operator" onclick="toDisplay(this);" id="plus">+</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="btn number" onclick="toDisplay(this);" id="decimal">.</button></td>
+                            <td><button class="btn number" onclick="toDisplay(this);" id="zero">0</button></td>
+                            <td colspan="2"><button class="btn function" onclick="calculate();" id="equals">=</button></td>
+                        </tr>
+                    </div>
+                </table>
+            </div>
         </main>
         <script src="js/script.js"></script>
     </body>

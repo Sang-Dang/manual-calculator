@@ -4,6 +4,111 @@
 }
 
 body {
-    background-color: #2d354a;
-    font-family: droid sans, sans-serif;
+    background-color: #5d6878;
+}
+
+
+#operator-display {
+    width: 45px;
+    height: 30px;
+    font-size: 125%;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+#number-display {
+    height: 30px;
+    width: 162px;
+    font-size: 125%;
+    margin-bottom: 8px;
+}
+
+#previous-number-display {
+    height: 15px;
+    width: 162px;
+    font-size: 90%;
+    margin-top: 10px;
+}
+
+table {
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: #22262c;
+}
+
+.display {
+    text-align: right;
+    border: none;
+    padding: 0 5px;
+    margin: 0;
+    border-radius: 2px;
+    color: white;
+    background-color: #22262c;
+}
+
+.operator {
+    color: red;
+}
+
+.number {
+    color: white;
+}
+
+.function {
+    color: aqua;
+}
+
+#equals {
+    width: 95%;
+    margin-right: -5px;
+}
+
+.function {
+    transition: background-color 0.2s;
+}
+
+.function:hover {
+    background-color: aqua;
+    color: white;
+}
+
+.function:active {
+    background-color: rgba(0, 255, 255, 0.51);
+}
+
+.operator {
+    transition: background-color 0.2s;
+}
+
+.operator:hover {
+    background-color: red;
+    color: white;
+}
+
+.operator:active {
+    background-color: rgba(255, 0, 0, 0.51);
+}
+
+button:hover {
+    background-color: #333e5580;
+    cursor: pointer;
+}
+
+button:active {
+    background-color: #2a2e3600;
+}
+button {
+    width: 50px;
+    height: 50px;
+    font-size: 120%;
+    margin: 2px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    background-color: #2a2e36;
+    border: 1px solid #2a2e36;
+    transition: background-color 0.2s;
+    position: relative;
 }

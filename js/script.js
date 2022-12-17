@@ -7,6 +7,8 @@ var operator;
 function toDisplay(num) {
     if(!document.getElementById("number-display").value.match(/^[0-9]+$/)) {
         document.getElementById("number-display").value = "";
+        document.getElementById("previous-number-display").value = "";
+        document.getElementById("operator-display").value = "";
     }
     if(num.classList[1] == "number") {
         if(operatorToggle == true) {
